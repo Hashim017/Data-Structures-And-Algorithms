@@ -104,8 +104,8 @@ g++ -std=c++11 -o dos_shell *.cpp
 Run
 bash
 ./dos_shell
-Example Session
-Code
+
+## Example Session
 DOS Shell> ls
 Documents  Downloads  Pictures
 DOS Shell> cd Documents
@@ -115,28 +115,34 @@ DOS Shell> echo "Hello" > file.txt
 DOS Shell> cat file.txt
 Hello
 DOS Shell> exit
-Implementation Highlights
-Efficient Command Storage
+
+## Implementation Highlights
+
+### Efficient Command Storage
 Hash table for O(1) command lookup
 Minimal memory overhead
 Fast command execution
-Robust Parsing
+
+### Robust Parsing
 Handles complex quoting
 Escape sequence support
 Error recovery
-Stream Management
+
+### Stream Management
 Proper I/O redirection
 Pipe buffer management
 Resource cleanup
-Performance Analysis
+
+## Performance Analysis
 Command Lookup: O(1) average case
 Path Resolution: O(n) where n = path length
 History Search: O(1) with hash table
 File Operations: O(n) where n = file size
-Advanced Features
+
+## Advanced Features
 ✓ Tab completion simulation ✓ Wildcard pattern matching ✓ Script file execution ✓ Multiple command chaining ✓ Conditional execution (&&, ||) ✓ Error handling and reporting ✓ Customizable prompts
 
-Development Highlights
+## Development Highlights
 ✓ Professional command-line interface ✓ Efficient data structure usage ✓ Scalable architecture ✓ Comprehensive error handling ✓ Cross-platform compatibility ✓ Clean, modular code
 
 License: MIT
